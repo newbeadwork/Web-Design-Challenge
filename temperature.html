@@ -17,7 +17,7 @@
 
 <body>
   <header class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="index.html">Latitude and Weather</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Comparisons<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="data.html">Data</a>
@@ -37,8 +37,8 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
             <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
-            <a class="dropdown-item" href="humidity.html">Latitude vs. Cloudness</a>
-            <a class="dropdown-item" href="humidity.html">Latitude vs. Wind</a>
+            <a class="dropdown-item" href="cloudness.html">Latitude vs. Cloudness</a>
+            <a class="dropdown-item" href="wind.html">Latitude vs. Wind</a>
           </div>
         </li>
       </ul> 
@@ -49,32 +49,33 @@
     <div class="row">
       
       <div class="col-md-8">
-        <h1>Summary: Latitude vs.</h1>
+        <h1>Latitude vs. Temperature</h1>
         <div class="box">
           <div class="clearfix"> 
-            <img src="Visualizations/temp_vs_lat_all.png" alt="Map" class="img-fluid">
-            <p class="text-right">
-              <h6>This project was done as a part of homework assignment Finally, the website must be deployed to GitHub pages.
-                When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-                Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file. 
-              </h6>
-            </p>
+            <img src="Visualizations/temp_vs_lat_all.png" alt="Temperature vs Latitude across the Globe" class="img-fluid">
+            <div class="text-justify">
+              <p>
+                <h5>The plot shows that there is a stong dependency between temperature and latitude across the Earth, <strong>with higher temperatures 
+                  closer to the 0 latitude (equator).</strong> 
+                </h5>
+              </p>
+            </div>
 
-            <img src="Visualizations/temp_vs_lat_north.png" alt="Map" class="img-fluid">
-            <p class="text-right">
-              <h6>This project was done as a part of homework assignment Finally, the website must be deployed to GitHub pages.
-                When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-                Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file. 
-              </h6>
-            </p>
+            <img src="Visualizations/temp_vs_lat_north.png" alt="Temperature vs Latitude North" class="img-fluid">
+            <div class="text-justify">
+              <p>
+              <h5><strong>Conclusions on Temperature vs. Latitude 
+                for Northern Hemisphere and Southern Hemisphere: </strong>
+                there is stronger dependency between latitude and temperature
+                in Northern Hemisphere than in Southern Hemisphere. Though we see
+                dependency in both plots and liner regression equations, Southern
+                Hemisphere`s scatter plot shows more spreaded data.
+              </h5>
+              </p>
+            </div>
 
-            <img src="Visualizations/temp_vs_lat_south.png" alt="Map" class="img-fluid">
-            <p class="text-right">
-              <h6>This project was done as a part of homework assignment Finally, the website must be deployed to GitHub pages.
-                When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-                Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file. 
-              </h6>
-            </p>
+            <img src="Visualizations/temp_vs_lat_south.png" alt="Temperature vs Latitude South" class="img-fluid">
+            
           </div> 
         </div>
       </div>
