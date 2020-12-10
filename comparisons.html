@@ -15,36 +15,38 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Comparisons<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
-              <a class="dropdown-item" href="cloudness.html">Latitude vs. Cloudness</a>
-              <a class="dropdown-item" href="wind.html">Latitude vs. Wind</a>
-            </div>
-          </li>
-        </ul> 
-      </div>
-    </header>  
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Latitude and Weather</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
+            <a class="dropdown-item" href="cloudness.html">Latitude vs. Cloudness</a>
+            <a class="dropdown-item" href="wind.html">Latitude vs. Wind</a>
+          </div>
+        </li>
+      </ul> 
+    </div>
+  </header>  
   <div class="container-fluid">
+    
     <div class="row">
+      
       <div class="col-md-6">
         <h1>Temperature</h1>
         <div class="box">
@@ -80,7 +82,9 @@
           </div> 
         </div>
       </div>
-
+    
+    <div class="row">
+      
       <div class="col-md-6">
         <h1>Cloudness</h1>
         <div class="box">
@@ -111,8 +115,12 @@
                 Python librares and the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. 
               </h6>
             </p>
+            <p>
             <img src="Visualizations/wind_vs_lat_north.png" alt="Map" class="img-fluid">
+            </p>
+            <p>
             <img src="Visualizations/wind_vs_lat_south.png" alt="Map" class="img-fluid">
+            </p>
           </div> 
         </div>
       </div>

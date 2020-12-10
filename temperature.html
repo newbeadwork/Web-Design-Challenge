@@ -45,10 +45,13 @@
     </div>
   </header>  
   <div class="container-fluid">
-    <div class="row">   
-      <div class="col-md-8">
-        <h1>Latitude vs. Temperature</h1>
+    
+    <h1>Latitude vs. Temperature</h1>
+    
+    <div class="row">     
+      <div class="col-md-4">  
         <div class="box">
+          <h3>Across the Globe</h3>
           <div class="clearfix"> 
             <img src="Visualizations/temp_vs_lat_all.png" alt="Temperature vs Latitude across the Globe" class="img-fluid">
             <div class="text-justify">
@@ -58,30 +61,46 @@
                 </h5>
               </p>
             </div>
-
-            <p>
-              <img src="Visualizations/temp_vs_lat_north.png" alt="Temperature vs Latitude North" class="float-left">
-            </p>
-            <p>
-              <img src="Visualizations/temp_vs_lat_south.png" alt="Temperature vs Latitude South" class="float-right">
-            </p>
-            <p>
-              <div class="text-justify">
-                <p>
-                <h5><strong>Conclusions on Temperature vs. Latitude 
-                  for Northern Hemisphere and Southern Hemisphere: </strong>
-                  there is stronger dependency between latitude and temperature
-                  in Northern Hemisphere than in Southern Hemisphere. Though we see
-                  dependency in both plots and liner regression equations, Southern
-                  Hemisphere`s scatter plot shows more spreaded data.
-                </h5>
-                </p>
-              </div>
-            </p>
-          </div> 
+          </div>
         </div>
       </div>
     </div>
+    <p>
+    <div class="row">   
+      <div class="col-md-4">  
+        <div class="box">
+          <h3>North</h3>
+          <div class="clearfix"> 
+              <img src="Visualizations/temp_vs_lat_north.png" alt="Temperature vs Latitude North" class="img-fluid">
+          </div> 
+        </div>
+      </div> 
+      
+      <div class="col-md-4">  
+        <div class="box">
+          <div class="text-justify">
+                
+            <h5><strong>Conclusions on Temperature vs. Latitude 
+              for Northern Hemisphere and Southern Hemisphere: </strong>
+              there is stronger dependency between latitude and temperature
+              in Northern Hemisphere than in Southern Hemisphere. Though we see
+              dependency in both plots and liner regression equations, Southern
+              Hemisphere`s scatter plot shows more spreaded data.
+            </h5>
+            
+          </div> 
+        </div>
+      </div> 
+      
+      <div class="col-md-4">  
+        <div class="box">
+          <h3>South</h3>
+          <div class="clearfix">
+              <img src="Visualizations/temp_vs_lat_south.png" alt="Temperature vs Latitude South" class="img-fluid">
+        </div>
+      </div>    
+    </div>
+    </p>
   </div>
   
   <!-- JavaScript Bundle with Popper -->
