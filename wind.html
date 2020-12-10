@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Latitude vs Wind</title>
+  <title>Latitude vs. Wind</title>
 
   <!-- Bring in our bootstrap stylesheet -->
   <!-- JavaScript Bundle with Popper -->
@@ -17,7 +17,7 @@
 
 <body>
   <header class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="index.html">Latitude and Weather</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Comparisons<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="data.html">Data</a>
@@ -37,49 +37,53 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
             <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
-            <a class="dropdown-item" href="humidity.html">Latitude vs. Cloudness</a>
-            <a class="dropdown-item" href="humidity.html">Latitude vs. Wind</a>
+            <a class="dropdown-item" href="cloudness.html">Latitude vs. Cloudness</a>
+            <a class="dropdown-item" href="wind.html">Latitude vs. Wind</a>
           </div>
         </li>
       </ul> 
     </div>
   </header>  
   <div class="container-fluid">
-    
-    <div class="row">
-      
+    <div class="row">   
       <div class="col-md-8">
-        <h1>Summary: Latitude vs.</h1>
+        <h1>Latitude vs. Wind</h1>
         <div class="box">
           <div class="clearfix"> 
-            <img src="Visualizations/wind_vs_lat_all.png" alt="Map" class="img-fluid">
-            <p class="text-right">
-              <h6>This project was done as a part of homework assignment Finally, the website must be deployed to GitHub pages.
-                When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-                Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file. 
-              </h6>
-            </p>
+            <img src="Visualizations/wind_vs_lat_all.png" alt="Wind vs Latitude across the Globe" class="img-fluid">
+            <div class="text-justify">
+              <p>
+                <h5>As the data spread across the "x" axis of the scatter plot it will be safe to say that there is
+                  <strong>no dependency between wind speed and latitude in our data.</strong> There are some outliers (with wind speeds
+                  more then 40 m/h). 
+                </h5>
+              </p>
+            </div>
 
-            <img src="Visualizations/wind_vs_lat_north.png" alt="Map" class="img-fluid">
-            <p class="text-right">
-              <h6>This project was done as a part of homework assignment Finally, the website must be deployed to GitHub pages.
-                When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-                Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file. 
-              </h6>
+            <p>
+              <img src="Visualizations/wind_vs_lat_north.png" alt="Wind vs Latitude North" class="float-left">
             </p>
-
-            <img src="Visualizations/wind_vs_lat_south.png" alt="Map" class="img-fluid">
-            <p class="text-right">
-              <h6>This project was done as a part of homework assignment Finally, the website must be deployed to GitHub pages.
-                When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-                Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file. 
-              </h6>
+            <p>
+              <img src="Visualizations/wind_vs_lat_south.png" alt="Wind vs Latitude South" class="float-right">
+            </p>
+            <p>
+              <div class="text-justify">
+                <p>
+                <h5><strong>Conclusions on Wind Speed vs. Latitude 
+                  for Northern Hemisphere and Southern Hemisphere:</strong>
+                  there is no dependency between latitude and wind speed
+                  in Northern Hemisphere  and in Southern Hemisphere. Though, we can
+                  definetely see that data on Northern Hemisphere includes some outliers
+                  (wind speed above 25 m/h). In the same time data on Southern Hemiphere
+                  is more grouped and the maximum wind speed on the scatter plot doesn`t exceed 
+                  25 miles per hour. But this maybe result of smaller dataset of cities in Southern Hemispere.
+                </h5>
+                </p>
+              </div>
             </p>
           </div> 
         </div>
       </div>
-      
-      
     </div>
   </div>
   
